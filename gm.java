@@ -11,14 +11,14 @@ public class GamemodeCommand implements CommandExecutor {
             p.sendMessage("");
             return true;
         }
-        if(args[0].equalsIgnoreCase("1")) {
+        if(args[0].equals("1")) {
             p.setGameMode(GameMode.CREATIVE);
             p.sendMessage("");
             p.sendMessage("§aGamemode: Você entrou no modo CRIATIVO.");
             p.sendMessage("");
             return true;
         }
-        if(args[0].equalsIgnoreCase("0")){
+        if(args[0].equals("0")){
             p.setGameMode(GameMode.SURVIVAL);
             p.sendMessage("");
             p.sendMessage("§aGamemode: Você entrou no modo SURVIVAL.");
